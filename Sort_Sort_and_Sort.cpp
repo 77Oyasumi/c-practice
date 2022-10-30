@@ -12,7 +12,7 @@ bool cmp(int i, int j) {
     else if (!(i & 1) && !(j & 1))
         return i < j;
     else
-        return i & 1;
+        return i & 1; //餘數同, 奇數在前
 }
 
 int main() {
