@@ -10,7 +10,7 @@ int main(){
     getchar();
     
     for(int i = 0; i < 20 - 1; i++){
-        for(int j = 0; j < 20 - 1; j++){
+        for(int j = 0; j < 20 - i - 1; j++){
             if(arr[j] > arr[j+1]){
                 int tmp = arr[j+1];
                 arr[j+1] = arr[j];
@@ -20,7 +20,7 @@ int main(){
     }
 
     for(int i = 0; i < 20; i++){
-        printf("%s ", arr[i]);
+        printf("%c", arr[i]);
     }
     puts("");
     return 0;
